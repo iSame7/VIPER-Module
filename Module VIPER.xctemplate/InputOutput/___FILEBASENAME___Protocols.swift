@@ -26,7 +26,7 @@ protocol ModuleBuilding: class {
 //MARK: Presenter -
 protocol ___VARIABLE_productName:identifier___Presenting: class {
 
-    var interactor: ___VARIABLE_productName:identifier___InteractorInputProtocol? { get set }
+    var interactor: ___VARIABLE_productName:identifier___InteractorInput? { get set }
 }
 
 //MARK: Interactor -
@@ -37,13 +37,13 @@ protocol ___VARIABLE_productName:identifier___InteractorOutput: class {
 
 protocol ___VARIABLE_productName:identifier___InteractorInput: class {
 
-    var presenter: ___VARIABLE_productName:identifier___InteractorOutputProtocol?  { get set }
+    var presenter: ___VARIABLE_productName:identifier___InteractorOutput?  { get set }
 
     /* Presenter -> Interactor */
 }
 
 //MARK: View -
-protocol ___VARIABLE_productName:identifier___ViewProtocol: class {
+protocol ___VARIABLE_productName:identifier___Viewable: class {
 
     var presenter: ___VARIABLE_productName:identifier___Presenting?  { get set }
 
