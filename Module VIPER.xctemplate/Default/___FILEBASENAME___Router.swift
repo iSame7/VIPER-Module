@@ -21,12 +21,12 @@ class ___VARIABLE_productName:identifier___Router: ___VARIABLE_productName:ident
 
     func navigateToAnotherModule() {
         if let viewController = self.anotherModuleBuilder()?.buildModule()?.viewController {
-            let navController = UINavigationController(rootViewController: weatherLocationVC)
+            let navController = UINavigationController(rootViewController: viewController)
             self.viewController?.present(navController, animated: true, completion: nil)
         }
     }
 
     private func anotherModuleBuilder() -> ModuleBuilder? {
-        return Container.sharedContainer.resolve(ModuleBuilder.self)
+        return Container.shared.resolve(ModuleBuilder.self)
     }
 }
