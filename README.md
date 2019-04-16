@@ -30,9 +30,8 @@ Go to Application folder, browse to the Xcode application icon. Right-click it a
 ![](/assets/VIPER-B-Architecture.png)
 
 ## References
-Patterns](https://medium.com/ios-os-x-development/ios-architecture-patterns-ecba4c38de52#.ba7q8dcih)
+- [iOS Architecture Patterns](https://medium.com/ios-os-x-development/ios-architecture-patterns-ecba4c38de52#.ba7q8dcih)
 - [#8 VIPER to be or not to be?](https://swifting.io/blog/2016/03/07/8-viper-to-be-or-not-to-be/)
 - [https://www.objc.io/issues/13-architecture/viper/](https://www.objc.io/issues/13-architecture/viper/)
 - [https://www.ckl.io/blog/ios-project-architecture-using-viper/](https://www.ckl.io/blog/ios-project-architecture-using-viper/)
-    
 - [https://academy.realm.io/posts/break-the-monoloth-with-b-viper-modules/](https://academy.realm.io/posts/break-the-monoloth-with-b-viper-modules/)
