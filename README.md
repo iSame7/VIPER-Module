@@ -26,3 +26,9 @@ Go to Application folder, browse to the Xcode application icon. Right-click it a
 ![](/assets/VIPER-Module-demo.gif)
 
 
+VIPER-B diagram overview
+![](/assets/VIPER-B-Architecture.png)
+
+
+
+
