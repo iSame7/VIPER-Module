@@ -23,6 +23,6 @@ Go to Application folder, browse to the Xcode application icon. Right-click it a
 
 
 ## Easy to use
-![](/assets/wizard.png)
+![](/assets/VIPER-Module-demo.gif)
 
 
