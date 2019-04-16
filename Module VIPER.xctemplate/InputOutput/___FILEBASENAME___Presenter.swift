@@ -10,13 +10,13 @@
 
 import UIKit
 
-class ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_productName:identifier___Presenting, ___VARIABLE_productName:identifier___InteractorOutputProtocol {
+class ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_productName:identifier___Presenting, ___VARIABLE_productName:identifier___InteractorOutput {
 
     weak private var view: ___VARIABLE_productName:identifier___Viewable?
-    var interactor: ___VARIABLE_productName:identifier___InteractorInputProtocol?
+    var interactor: ___VARIABLE_productName:identifier___InteractorInput?
     private let router: ___VARIABLE_productName:identifier___Routing
 
-    init(view: ___VARIABLE_productName:identifier___Viewable, interactor: ___VARIABLE_productName:identifier___InteractorInputProtocol?, router: ___VARIABLE_productName:identifier___Routing) {
+    init(view: ___VARIABLE_productName:identifier___Viewable, interactor: ___VARIABLE_productName:identifier___InteractorInput?, router: ___VARIABLE_productName:identifier___Routing) {
         self.view = view
         self.interactor = interactor
         self.router = router
