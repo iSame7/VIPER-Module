@@ -12,7 +12,7 @@ import UIKit
 
 class ___VARIABLE_productName:identifier___ViewController: UIViewController, ___VARIABLE_productName:identifier___Viewable {
 
-	var presenter: ___VARIABLE_productName:identifier___PresenterProtocol?
+	var presenter: ___VARIABLE_productName:identifier___Presenting?
 
 	override func viewDidLoad() {
         super.viewDidLoad()
