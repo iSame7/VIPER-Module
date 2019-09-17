@@ -8,7 +8,13 @@
 
 import Foundation
 
-let templateName = "Module VIPER.xctemplate"
+//let templateName = "Module VIPER.xctemplate"
+//let mvvmcTemplateName =
+enum Template: String {
+    case viper = "Module VIPER.xctemplate"
+    case mvvmc = "Module MVVMC.xctemplate"
+}
+
 let destinationRelativePath = "/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/Project Templates/iOS/Application"
 
 func printInConsole(_ message:Any){
@@ -18,16 +24,29 @@ func printInConsole(_ message:Any){
 }
 
 func moveTemplate(){
+    var templateName: Template = .viper
+    if CommandLine.argc > 1 {
+        printInConsole("Arguments are passed.")
+        let arguments = CommandLine.arguments
+        for argument in arguments {
+            if argument == "mvvmc" {
+                templateName = .mvvmc
+            }
+        }
+    } else {
+        printInConsole("No arguments passed.")
+    }
+    
+    
     let fileManager = FileManager.default
     let destinationPath = bash(command: "xcode-select", arguments: ["--print-path"]).appending(destinationRelativePath)
     do {
-        if !fileManager.fileExists(atPath:"\(destinationPath)/\(templateName)"){
-            try fileManager.copyItem(atPath: templateName, toPath: "\(destinationPath)/\(templateName)")
+        if !fileManager.fileExists(atPath:"\(destinationPath)/\(templateName.rawValue)"){
+            try fileManager.copyItem(atPath: templateName.rawValue, toPath: "\(destinationPath)/\(templateName.rawValue)")
             printInConsole("✅  Template installed succesfully 🎉. Enjoy 🙂")
             
         }else{
-            
-            try _ = fileManager.replaceItemAt(URL(fileURLWithPath:"\(destinationPath)/\(templateName)"), withItemAt: URL(fileURLWithPath:templateName))
+            try _ = fileManager.replaceItemAt(URL(fileURLWithPath:"\(destinationPath)/\(templateName.rawValue)"), withItemAt: URL(fileURLWithPath:templateName.rawValue))
             printInConsole("✅  Template already exists. So has been replaced succesfully 🎉. Enjoy 🙂")
         }
     }
