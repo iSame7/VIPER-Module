@@ -7,6 +7,7 @@ If your iOS app is built with VIPER architecture, it's time consuming to create 
 
 ### Using script (easy)
 Only need execute this command in terminal:
+
 To generate MVVMC architecture template 
 ```swift
 sudo swift install.swift mvvmc 
