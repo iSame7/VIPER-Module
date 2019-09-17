@@ -1,14 +1,19 @@
 # VIPER-Module
-Xcode template for VIPER Architecture 
+Xcode template for VIPER Architecture - Now supports MVVMC Architecture :boom:
 
-VanMoof iOS app is built with VIPER architecture, it's time consuming to create a new module, since we need to create 5 files for each module. Imagine that you need to create 10-12 modules, assuming that each module takes 15 minutes to be created, so (10*15) you need 2,5 hours to create these 10 modules. I think it's useful to create an automated tool that does this dummy work for you. 
+If your iOS app is built with VIPER architecture, it's time consuming to create a new module, since we need to create 5 files for each module. Imagine that you need to create 10-12 modules, assuming that each module takes 15 minutes to be created, so (10*15) you need 2,5 hours to create these 10 modules. I think it's useful to create an automated tool that does this dummy work for you. 
 
 ## How to install
 
 ### Using script (easy)
 Only need execute this command in terminal:
+To generate MVVMC architecture template 
 ```swift
-sudo swift install.swift
+sudo swift install.swift mvvmc 
+```
+To generate VIPER architecture template 
+```swift
+sudo swift install.swift viper 
 ```
 You should be this output message:
 
